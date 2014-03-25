@@ -1,0 +1,23 @@
+{
+  "name": "ngPittburghTalkExamples",
+  "version": "0.0.0",
+  "description": "examples for a Pittsburgh talk, duh",
+  "authors": [
+    "Ben Lesh <ben@benlesh.com>"
+  ],
+  "license": "MIT",
+  "homepage": "http://www.benlesh.com",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.2.15",
+    "angular-route": "~1.2.15",
+    "angular-mocks": "~1.2.15"
+  }
+}
