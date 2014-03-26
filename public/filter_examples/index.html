@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html ng-app="filtersApp">
+<head>
+    <title>ngPittsburgh - Filters Example</title>
+    <script src="../bower_components/angular/angular.min.js"></script>
+    <script src="filtersApp.js"></script>
+</head>
+<body>
+<div ng-controller="MainCtrl">
+    <p>
+        <input type="number" ng-model="pennyCount"/>
+        If I have {{pennyCount | number}} pennies, that's {{(pennyCount / 100) | currency}}!
+    </p>
+
+    <p>
+        Talk like a pirate day is {{yarr | date: "MMM dd, yyyy"}}.
+    </p>
+
+    <p>
+        Try llama-ese:
+        <input type="text" ng-model="saySomething" placeholder="say something"/>
+    </p>
+
+    <div ng-show="saySomething.length > 0">
+        <p>
+            The little llama says: {{saySomething | llamafy: 2}}
+        </p>
+
+        <p> The big llama says:</p>
+
+        <h1>{{saySomething | llamafy: 7}}</h1>
+    </div>
+</div>
+</body>
+</html>

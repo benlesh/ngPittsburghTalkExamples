@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html ng-app="serviceApp">
+<head>
+    <title>ngPittsburgh - Service Example</title>
+    <script src="../bower_components/angular/angular.min.js"></script>
+    <script src="serviceApp.js"></script>
+</head>
+<body ng-controller="MainCtrl as ctrl">
+<p>
+    <button ng-click="ctrl.loadItems()">Load Items</button>
+</p>
+<ul>
+    <li ng-repeat="item in items track by item.id">{{item.name}}</li>
+</ul>
+</body>
+</html>

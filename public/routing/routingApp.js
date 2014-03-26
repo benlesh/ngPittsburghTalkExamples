@@ -21,7 +21,7 @@ app.config(['$routeProvider', function ($routeProvider) {
         });
 }]);
 
-// Some controllers examples...
+// Some controller examples...
 
 app.controller('Route1Ctrl', ['$scope', function ($scope) {
     $scope.title = 'Route 1';
